@@ -37,7 +37,7 @@ app.use(express.static('public'));
 // app.set('layout','layout/layoutEjs')
 
 //middle ware untk binding data dari halaman html
-app.use(express.urlencoded())
+app.use(express.urlencoded({extended:true}))
 
 
 //error handling membuat folder data apabila tidak ada
